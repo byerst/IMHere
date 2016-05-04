@@ -52,9 +52,14 @@ public class MapsActivity extends AppCompatActivity {
         EditText location_tf = (EditText) findViewById(R.id.TFaddress);
         String location = location_tf.getText().toString();
         Log.d("Break", location);
+        location = location.trim();
         // if no location was entered
         if(location.isEmpty()){
             Log.d("Break", "break");
+
+            location_tf.setText("");
+            location_tf.clearFocus();
+
             //toast to user to notify error
             Toast.makeText(getApplicationContext(),
                     "Error -- Must Enter Location",
