@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IM Here</string>
+    <string name="title_activity_maps">Select Destination</string>
+    <string name="title_activity_sms">Set Up Message</string>
+    <string name="title_activity_wait">wait</string>
+    <string name="title_activity_wait2">Waiting to Send...</string>
+    <string name="address_search">Enter Destination</string>
+    <string name="button_search">Search</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_start">Press to Begin</string>
+</resources>

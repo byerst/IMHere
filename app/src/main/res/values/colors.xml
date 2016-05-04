@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wait_bg">#0097A7</color>
+    <color name="wait_text">#FFFFFF</color>
+    <color name="trans_bg">#50FFFFFF</color>
+    <color name="light_blue">#80D8FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="black">#212121</color>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/waitActivity2View"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/white"
+    android:animateLayoutChanges="true">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/Theme.AppCompat.Light"
+        android:background="@color/wait_bg"
+        app:title="@string/app_name"
+        app:logo="@drawable/ic_action_name"
+        app:titleTextColor="@color/white"
+        app:subtitle="@string/title_activity_wait2"
+        app:subtitleTextColor="@color/gray">
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/start_button"
+        android:text="@string/button_start"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/Bstart"
+        android:layout_gravity="top"
+        android:onClick="onBegin" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="100px" />
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:animateLayoutChanges="true">
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer"
+            android:layout_gravity="center"
+            android:textColor="@color/wait_bg"
+            android:textSize="50sp"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:background="@drawable/circle_shape"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100000"
+            android:layout_gravity="center"
+            android:progress="0" />
+    </FrameLayout>
+
+
+</LinearLayout>
